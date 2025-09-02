@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../state/AuthContext.jsx'
 import { Brain, BarChart3, Shield, Sparkles, Quote, User, Lock, LogIn, Eye, EyeOff, ClipboardCheck } from 'lucide-react'

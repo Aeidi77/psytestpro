@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 import AdminDashboard from './pages/AdminDashboard.jsx'
@@ -19,46 +20,70 @@ export default function App() {
     <div className="min-h-screen flex flex-col">
       {user && <Header />}
       <main className="flex-1 py-6">
+        {/* Tambahkan ScrollToTop di sini */}
+        <ScrollToTop />
+
         <Routes>
-          <Route path="/" element={<Navigate to={user ? (user.role === 'admin' ? '/admin' : '/dashboard') : '/login'} />} />
+          <Route
+            path="/"
+            element={<Navigate to={user ? (user.role === 'admin' ? '/admin' : '/dashboard') : '/login'} />}
+          />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
 
-          <Route path="/admin" element={
-            <ProtectedRoute role="admin">
-              <AdminDashboard />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/admin"
+            element={
+              <ProtectedRoute role="admin">
+                <AdminDashboard />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route path="/dashboard" element={
-            <ProtectedRoute role="user">
-              <UserDashboard />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute role="user">
+                <UserDashboard />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route path="/tests" element={
-            <ProtectedRoute>
-              <Tests />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/tests"
+            element={
+              <ProtectedRoute>
+                <Tests />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route path="/tests/:id" element={
-            <ProtectedRoute role="user">
-              <TestTake />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/tests/:id"
+            element={
+              <ProtectedRoute role="user">
+                <TestTake />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route path="/results" element={
-            <ProtectedRoute>
-              <Results />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/results"
+            element={
+              <ProtectedRoute>
+                <Results />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route path="/profile" element={
-            <ProtectedRoute>
-              <Profile />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute>
+                <Profile />
+              </ProtectedRoute>
+            }
+          />
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
