@@ -1,0 +1,5 @@
+@import "tailwindcss";
+/* Custom utilities */
+@utility container {
+  @apply max-w-6xl mx-auto px-4;
+}
