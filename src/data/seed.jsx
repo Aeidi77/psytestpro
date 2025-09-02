@@ -61,7 +61,7 @@ export function ensureSeed() {
             'Fokus pada fitur utama dan menunda optimisasi',
             'Meminta perpanjangan waktu untuk hasil maksimal'
           ], 
-          answer: -1 // Personality questions don't have right/wrong answers
+          answer: 1
         },
         { 
           id: crypto.randomUUID(), 
@@ -72,7 +72,7 @@ export function ensureSeed() {
             'Bertanya detail tentang alasan kritik tersebut',
             'Mencari pendapat programmer lain sebagai pembanding'
           ], 
-          answer: -1 
+          answer: 2
         },
         { 
           id: crypto.randomUUID(), 
@@ -83,7 +83,7 @@ export function ensureSeed() {
             'Mencari mentor yang sudah berpengalaman',
             'Menunda hingga ada training formal dari perusahaan'
           ], 
-          answer: -1 
+          answer: 1 
         },
         { 
           id: crypto.randomUUID(), 
@@ -94,7 +94,7 @@ export function ensureSeed() {
             'Diskusi dengan senior developer',
             'Mencari solusi serupa di Stack Overflow'
           ], 
-          answer: -1 
+          answer: 0 
         },
         { 
           id: crypto.randomUUID(), 
@@ -105,7 +105,7 @@ export function ensureSeed() {
             'Menerima dengan syarat tetap bisa hands-on coding',
             'Menolak karena lebih suka fokus pada technical skill'
           ], 
-          answer: -1 
+          answer: 2
         }
       ]
     },
@@ -284,7 +284,7 @@ export function ensureSeed() {
             'Menyalahkan proses testing yang kurang baik',
             'Tenang karena ini hal normal dalam development'
           ], 
-          answer: -1 
+          answer: 1 
         },
         { 
           id: crypto.randomUUID(), 
@@ -295,7 +295,7 @@ export function ensureSeed() {
             'Dengan sabar menjelaskan dengan cara berbeda',
             'Meminta senior lain yang menjelaskan'
           ], 
-          answer: -1 
+          answer: 2 
         },
         { 
           id: crypto.randomUUID(), 
@@ -306,7 +306,7 @@ export function ensureSeed() {
             'Enthusiastic melihatnya sebagai kesempatan belajar',
             'Menerima tapi terus complain tentang teknologi tersebut'
           ], 
-          answer: -1 
+          answer: 2 
         },
         { 
           id: crypto.randomUUID(), 
@@ -317,7 +317,7 @@ export function ensureSeed() {
             'Tenang, acknowledge bug dan fokus pada fitur lain',
             'Menyalahkan environment atau faktor eksternal'
           ], 
-          answer: -1 
+          answer: 2 
         },
         { 
           id: crypto.randomUUID(), 
@@ -328,7 +328,7 @@ export function ensureSeed() {
             'Melihatnya sebagai kesempatan saling belajar',
             'Toleran tapi tetap mempertahankan gaya sendiri'
           ], 
-          answer: -1 
+          answer: 2 
         }
       ]
     },
@@ -346,7 +346,7 @@ export function ensureSeed() {
             'Membaca artikel teknis dan research paper',
             'Mengajarkan programming kepada orang lain'
           ], 
-          answer: -1 
+          answer:  0
         },
         { 
           id: crypto.randomUUID(), 
@@ -357,7 +357,7 @@ export function ensureSeed() {
             'UI/UX design dan frontend development',
             'DevOps dan infrastructure automation'
           ], 
-          answer: -1 
+          answer: 1 
         },
         { 
           id: crypto.randomUUID(), 
@@ -368,7 +368,7 @@ export function ensureSeed() {
             'Prefer menonton recording-nya nanti',
             'Jarang tertarik, lebih suka belajar mandiri'
           ], 
-          answer: -1 
+          answer: 1 
         },
         { 
           id: crypto.randomUUID(), 
@@ -379,7 +379,7 @@ export function ensureSeed() {
             'Membuat tools untuk meningkatkan produktivitas',
             'Contribute pada project yang sudah ada'
           ], 
-          answer: -1 
+          answer: 0 
         },
         { 
           id: crypto.randomUUID(), 
@@ -390,7 +390,7 @@ export function ensureSeed() {
             'Menulis clean, elegant code',
             'Berkolaborasi dengan tim dalam big project'
           ], 
-          answer: -1 
+          answer: 0 
         }
       ]
     }
